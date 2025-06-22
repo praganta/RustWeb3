@@ -1,0 +1,21 @@
+[package]
+name = "web3"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-modbus = "0.5"
+tokio-serial = "5.4"
+tokio-util = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+influxdb2 = "0.4.5"
+futures = "0.3"  # Untuk stream::once
+chrono = { version = "0.4", features = ["serde"] }
+sha2 = "0.10"
+hex = "0.4"
+dotenv = "0.15"
+web3 = "0.19.0"
+base64 = "0.21"
+secp256k1 = { version = "0.24", default-features = false, features = ["rand"] }
